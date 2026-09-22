@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNation Gym | Premium Strength & Conditioning</title>
+    <meta name="description" content="FitNation Gym is a premium, results-driven strength and conditioning facility.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="preloader">
+        <div class="preloader-text">FITNATION</div>
+    </div>
+
+    <gym-header></gym-header>
+
+    <main>
+        <!-- Hero Slider (Professional Hero & CTA) -->
+        <section class="hero slider-container">
+            <div class="slide active">
+                <div class="hero-bg gs-scale">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80" alt="Gym Hero 1">
+                    <div class="overlay"></div>
+                </div>
+                <div class="container hero-content">
+                    <h1 class="hero-title slide-reveal-text">FORGE YOUR <br/><span class="highlight">LEGACY</span></h1>
+                    <p class="hero-subtitle slide-reveal-text delay-1">Real coaches, real equipment, real results. Stop treating your workouts casually.</p>
+                    <div class="hero-actions slide-reveal-text delay-2">
+                        <a href="membership.html" class="btn btn-primary btn-large hover-target">Join Now</a>
+                        <a href="contact.html" class="btn btn-outline btn-large hover-target">Book a Free Trial</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="hero-bg gs-scale">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80" alt="Gym Hero 2">
+                    <div class="overlay"></div>
+                </div>
+                <div class="container hero-content">
+                    <h1 class="hero-title slide-reveal-text">EXPERT <br/><span class="highlight">GUIDANCE</span></h1>
+                    <p class="hero-subtitle slide-reveal-text delay-1">Learn from state champion powerlifters and elite conditioning coaches.</p>
+                    <div class="hero-actions slide-reveal-text delay-2">
+                        <a href="trainers.html" class="btn btn-primary btn-large hover-target">Meet Our Trainers</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <div class="slider-arrow prev hover-target">&larr;</div>
+                <div class="slider-dots">
+                    <span class="dot active hover-target" data-index="0"></span>
+                    <span class="dot hover-target" data-index="1"></span>
+                </div>
+                <div class="slider-arrow next hover-target">&rarr;</div>
+            </div>
+        </section>
+
+        <!-- Marquee -->
+        <div class="marquee-section">
+            <div class="marquee-content" id="marqueeText">
+                COMPETITION GRADE EQUIPMENT &nbsp; ✦ &nbsp; OPEN 24/7 &nbsp; ✦ &nbsp; NO SIGNUP FEES &nbsp; ✦ &nbsp; ELITE COACHING &nbsp; ✦ &nbsp;
+                COMPETITION GRADE EQUIPMENT &nbsp; ✦ &nbsp; OPEN 24/7 &nbsp; ✦ &nbsp; NO SIGNUP FEES &nbsp; ✦ &nbsp; ELITE COACHING &nbsp; ✦ &nbsp;
+            </div>
+        </div>
+
+        <!-- BMI & Calorie Calculator Section (JS Powered) -->
+        <section class="section">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2 class="section-title reveal-up">KNOW YOUR <br/><span class="highlight">NUMBERS</span></h2>
+                    <p class="section-desc reveal-up delay-1">To get real results, you need data. Use our internal BMI metric calculator to figure out your current baseline. A healthy strength routine starts with knowing exactly where you stand.</p>
+                    
+                    <div class="bmi-result-box reveal-up delay-2" id="bmiResultBox">
+                        <h3>Your BMI is: <span id="bmiValue">0.0</span></h3>
+                        <p id="bmiCategory" style="margin-top:0.5rem;"></p>
+                    </div>
+                </div>
+                
+                <div class="calculator-box reveal-up delay-1 hover-target">
+                    <h3 style="margin-bottom: 2rem; font-family: var(--font-heading); font-size: 2rem; color: var(--accent-color);">BMI CALCULATOR</h3>
+                    <form id="bmiForm">
+                        <div class="form-grid" style="grid-template-columns: 1fr;">
+                            <input type="number" id="bmiHeight" placeholder="Height in Centimeters (cm)" required class="hover-target" min="50" max="250">
+                            <input type="number" id="bmiWeight" placeholder="Weight in Kilograms (kg)" required class="hover-target" min="20" max="350">
+                        </div>
+                        <button type="submit" class="btn btn-primary hover-target" style="width: 100%;">CALCULATE RESULT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Classes Section (Preview) -->
+        <section class="section classes-section section-bg-dark">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">FEATURED <span class="highlight">PROGRAMS</span></h2>
+                    <p class="section-desc" style="margin: 0 auto 4rem auto;">Target your specific goals with our specialized programming.</p>
+                </div>
+                
+                <div class="classes-list">
+                    <div class="class-item reveal-up hover-target" data-img="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80">
+                        <div class="class-info">
+                            <h3>POWERLIFTING FUNDAMENTALS</h3>
+                            <p class="class-trainer">Strength Training & 1RM Progression</p>
+                        </div>
+                        <div class="class-arrow">↗</div>
+                    </div>
+                    
+                    <div class="class-item reveal-up hover-target" data-img="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80">
+                        <div class="class-info">
+                            <h3>TACTICAL HIIT</h3>
+                            <p class="class-trainer">Fat Loss & Extreme Conditioning</p>
+                        </div>
+                        <div class="class-arrow">↗</div>
+                    </div>
+
+                    <div class="class-item reveal-up hover-target" data-img="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80">
+                        <div class="class-info">
+                            <h3>AESTHETIC HYPERTROPHY</h3>
+                            <p class="class-trainer">Muscle Building & Body Composition</p>
+                        </div>
+                        <div class="class-arrow">↗</div>
+                    </div>
+                </div>
+                <div class="class-image-preview"><img src="" alt="Class Preview"></div>
+                
+                <div class="text-center" style="margin-top: 4rem;">
+                    <a href="programs.html" class="btn btn-outline hover-target reveal-up">Explore Full Programs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Member Transformation Hook -->
+        <section class="section text-center" style="background: url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80') center/cover; position: relative;">
+            <div class="overlay" style="background: rgba(0,0,0,0.85);"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h2 class="huge-title reveal-text" style="font-size: clamp(3rem, 7vw, 10rem);">REAL GYM.<br/>REAL RESULTS.</h2>
+                <p class="section-desc reveal-up delay-1" style="margin: 0 auto 3rem auto;">Don't take our word for it. Look at our members before and after joining FitNation Gym.</p>
+                <a href="transformations.html" class="btn btn-primary btn-huge hover-target reveal-up delay-2">VIEW TRANSFORMATIONS</a>
+            </div>
+        </section>
+
+    </main>
+
+    <gym-footer></gym-footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
