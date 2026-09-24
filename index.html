@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitNation Gym | Premium Strength & Conditioning</title>
     <meta name="description" content="FitNation Gym is a premium, results-driven strength and conditioning facility.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
+
 <body>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
     <div class="preloader">
-        <div class="preloader-text">FITNATION</div>
+        <div class="preloader-text">FITNATION <span
+                style="font-size:1rem; letter-spacing:6px; display:block; text-align:center;">GYM</span></div>
     </div>
 
-    <gym-header></gym-header>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><span class="logo-main">FITNATION</span><span
+                    class="logo-gym">GYM</span></a>
+            <div class="burger-menu hover-target">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active hover-target">HOME</a>
+                <a href="about.html" class="nav-link hover-target">ABOUT</a>
+                <a href="programs.html" class="nav-link hover-target">PROGRAMS</a>
+                <a href="trainers.html" class="nav-link hover-target">TRAINERS</a>
+                <a href="membership.html" class="nav-link hover-target">MEMBERSHIPS</a>
+                <a href="classes.html" class="nav-link hover-target">CLASSES</a>
+                <a href="transformations.html" class="nav-link hover-target">TRANSFORMATIONS</a>
+                <a href="contact.html" class="nav-link hover-target">CONTACT</a>
+                <a href="#" class="btn btn-primary hover-target mobile-auth book-call-btn" style="display:none;">BOOK A
+                    CALL</a>
+            </nav>
+            <div class="desktop-auth nav-actions">
+                <a href="#" class="btn btn-primary hover-target book-call-btn">BOOK A CALL</a>
+            </div>
+        </div>
+    </header>
 
     <main>
+        <!-- Mobile Sticky CTA -->
+        <div class="mobile-bottom-cta">
+            <a href="tel:+16145554766" class="cta-link">CALL</a>
+            <a href="https://wa.me/16145554766" class="cta-link">WHATSAPP</a>
+            <a href="#" class="cta-link highlight-cta book-call-btn">BOOK A CALL</a>
+        </div>
+
         <!-- Hero Slider (Professional Hero & CTA) -->
         <section class="hero slider-container">
             <div class="slide active">
@@ -28,23 +66,53 @@
                     <div class="overlay"></div>
                 </div>
                 <div class="container hero-content">
-                    <h1 class="hero-title slide-reveal-text">FORGE YOUR <br/><span class="highlight">LEGACY</span></h1>
-                    <p class="hero-subtitle slide-reveal-text delay-1">Real coaches, real equipment, real results. Stop treating your workouts casually.</p>
+                    <h1 class="hero-title slide-reveal-text">FORGE YOUR <br /><span class="highlight">STRONGEST
+                            SELF</span></h1>
+                    <p class="hero-subtitle slide-reveal-text delay-1">Premium strength & conditioning gym built for
+                        people serious about results.</p>
                     <div class="hero-actions slide-reveal-text delay-2">
-                        <a href="membership.html" class="btn btn-primary btn-large hover-target">Join Now</a>
-                        <a href="contact.html" class="btn btn-outline btn-large hover-target">Book a Free Trial</a>
+                        <a href="#" class="btn btn-primary btn-large hover-target book-call-btn">BOOK A CALL</a>
+                        <a href="membership.html" class="btn btn-outline btn-large hover-target">VIEW MEMBERSHIPS</a>
+                    </div>
+                    <div class="trust-indicators slide-reveal-text delay-3"
+                        style="display: flex; gap: 1rem; margin-top: 3rem; flex-wrap: wrap; font-size: 0.9rem;">
+                        <div
+                            style="border: 1px solid rgba(255, 255, 255, 0.3); background: rgba(0, 0, 0, 0.6); padding: 0.8rem 1.5rem; border-radius: 4px; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(5px);">
+                            <span
+                                style="color:var(--accent-color); margin-right: 0.5rem; font-size: 1.2rem; vertical-align: middle; font-weight: 900;">✓</span>
+                            <span
+                                style="vertical-align: middle; color: #ffffff; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">500+
+                                Members</span>
+                        </div>
+                        <div
+                            style="border: 1px solid rgba(255, 255, 255, 0.3); background: rgba(0, 0, 0, 0.6); padding: 0.8rem 1.5rem; border-radius: 4px; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(5px);">
+                            <span
+                                style="color:var(--accent-color); margin-right: 0.5rem; font-size: 1.2rem; vertical-align: middle; font-weight: 900;">✓</span>
+                            <span
+                                style="vertical-align: middle; color: #ffffff; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">15+
+                                Expert Trainers</span>
+                        </div>
+                        <div
+                            style="border: 1px solid rgba(255, 255, 255, 0.3); background: rgba(0, 0, 0, 0.6); padding: 0.8rem 1.5rem; border-radius: 4px; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(5px);">
+                            <span
+                                style="color:var(--accent-color); margin-right: 0.5rem; font-size: 1.2rem; vertical-align: middle; font-weight: 900;">✓</span>
+                            <span
+                                style="vertical-align: middle; color: #ffffff; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Open
+                                24/7</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="slide">
                 <div class="hero-bg gs-scale">
                     <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80" alt="Gym Hero 2">
                     <div class="overlay"></div>
                 </div>
                 <div class="container hero-content">
-                    <h1 class="hero-title slide-reveal-text">EXPERT <br/><span class="highlight">GUIDANCE</span></h1>
-                    <p class="hero-subtitle slide-reveal-text delay-1">Learn from state champion powerlifters and elite conditioning coaches.</p>
+                    <h1 class="hero-title slide-reveal-text">EXPERT <br /><span class="highlight">GUIDANCE</span></h1>
+                    <p class="hero-subtitle slide-reveal-text delay-1">Learn from state champion powerlifters and elite
+                        conditioning coaches.</p>
                     <div class="hero-actions slide-reveal-text delay-2">
                         <a href="trainers.html" class="btn btn-primary btn-large hover-target">Meet Our Trainers</a>
                     </div>
@@ -64,34 +132,394 @@
         <!-- Marquee -->
         <div class="marquee-section">
             <div class="marquee-content" id="marqueeText">
-                COMPETITION GRADE EQUIPMENT &nbsp; ✦ &nbsp; OPEN 24/7 &nbsp; ✦ &nbsp; NO SIGNUP FEES &nbsp; ✦ &nbsp; ELITE COACHING &nbsp; ✦ &nbsp;
-                COMPETITION GRADE EQUIPMENT &nbsp; ✦ &nbsp; OPEN 24/7 &nbsp; ✦ &nbsp; NO SIGNUP FEES &nbsp; ✦ &nbsp; ELITE COACHING &nbsp; ✦ &nbsp;
+                COMPETITION GRADE EQUIPMENT &nbsp; ✦ &nbsp; OPEN 24/7 &nbsp; ✦ &nbsp; NO SIGNUP FEES &nbsp; ✦ &nbsp;
+                ELITE COACHING &nbsp; ✦ &nbsp;
+                COMPETITION GRADE EQUIPMENT &nbsp; ✦ &nbsp; OPEN 24/7 &nbsp; ✦ &nbsp; NO SIGNUP FEES &nbsp; ✦ &nbsp;
+                ELITE COACHING &nbsp; ✦ &nbsp;
             </div>
         </div>
+
+        <!-- Statistics -->
+        <section class="section section-bg-dark statistics-section-padding">
+            <div class="container">
+                <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                    <div class="stat-item text-center reveal-up">
+                        <div class="stat-number"><span class="counter" data-target="10">0</span>+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item text-center reveal-up delay-1">
+                        <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
+                        <div class="stat-label">Active Members</div>
+                    </div>
+                    <div class="stat-item text-center reveal-up delay-2">
+                        <div class="stat-number"><span class="counter" data-target="15">0</span>+</div>
+                        <div class="stat-label">Expert Trainers</div>
+                    </div>
+                    <div class="stat-item text-center reveal-up delay-3">
+                        <div class="stat-number"><span class="counter" data-target="25">0</span>+</div>
+                        <div class="stat-label">Weekly Classes</div>
+                    </div>
+                    <div class="stat-item text-center reveal-up delay-3">
+                        <div class="stat-number"><span class="counter" data-target="98">0</span>%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why FitNation -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">WHY <span class="highlight">FITNATION</span></h2>
+                    <p class="section-desc" style="margin: 0 auto 3rem auto;">We are not just a gym. We are a community
+                        dedicated to your growth.</p>
+                </div>
+                <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="why-card reveal-up hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            01</div>
+                        <h3>Elite Equipment</h3>
+                        <p>State-of-the-art machines, lifting platforms, and calibrated plates.</p>
+                    </div>
+                    <div class="why-card reveal-up delay-1 hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            02</div>
+                        <h3>Certified Trainers</h3>
+                        <p>Learn from industry leaders with proven track records.</p>
+                    </div>
+                    <div class="why-card reveal-up delay-2 hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            03</div>
+                        <h3>Personalized Programs</h3>
+                        <p>Tailored training blocks customized to your specific goals.</p>
+                    </div>
+                    <div class="why-card reveal-up delay-3 hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            04</div>
+                        <h3>24/7 Gym Access</h3>
+                        <p>Train exactly when you want, without any restrictions.</p>
+                    </div>
+                    <div class="why-card reveal-up hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            05</div>
+                        <h3>Progress Tracking</h3>
+                        <p>Data-driven insights and regular check-ins to ensure growth.</p>
+                    </div>
+                    <div class="why-card reveal-up delay-1 hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            06</div>
+                        <h3>Clean & Premium</h3>
+                        <p>Immaculately maintained facilities with luxury amenities.</p>
+                    </div>
+                    <div class="why-card reveal-up delay-2 hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            07</div>
+                        <h3>Recovery Zone</h3>
+                        <p>Optimize your gains with our sauna, cold plunge, and mobility areas.</p>
+                    </div>
+                    <div class="why-card reveal-up delay-3 hover-target">
+                        <div
+                            style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 1rem; opacity: 0.5;">
+                            08</div>
+                        <h3>Community Events</h3>
+                        <p>Join exclusive member-only workshops, seminars, and social events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- BMI & Calorie Calculator Section (JS Powered) -->
         <section class="section">
             <div class="container about-grid">
                 <div class="about-text">
-                    <h2 class="section-title reveal-up">KNOW YOUR <br/><span class="highlight">NUMBERS</span></h2>
-                    <p class="section-desc reveal-up delay-1">To get real results, you need data. Use our internal BMI metric calculator to figure out your current baseline. A healthy strength routine starts with knowing exactly where you stand.</p>
-                    
+                    <h2 class="section-title reveal-up">KNOW YOUR <br /><span class="highlight">NUMBERS</span></h2>
+                    <p class="section-desc reveal-up delay-1">To get real results, you need data. Use our internal BMI
+                        metric calculator to figure out your current baseline. A healthy strength routine starts with
+                        knowing exactly where you stand.</p>
+
                     <div class="bmi-result-box reveal-up delay-2" id="bmiResultBox">
                         <h3>Your BMI is: <span id="bmiValue">0.0</span></h3>
                         <p id="bmiCategory" style="margin-top:0.5rem;"></p>
                     </div>
                 </div>
-                
+
                 <div class="calculator-box reveal-up delay-1 hover-target">
-                    <h3 style="margin-bottom: 2rem; font-family: var(--font-heading); font-size: 2rem; color: var(--accent-color);">BMI CALCULATOR</h3>
+                    <h3
+                        style="margin-bottom: 2rem; font-family: var(--font-heading); font-size: 2rem; color: var(--accent-color);">
+                        BMI CALCULATOR</h3>
                     <form id="bmiForm">
                         <div class="form-grid" style="grid-template-columns: 1fr;">
-                            <input type="number" id="bmiHeight" placeholder="Height in Centimeters (cm)" required class="hover-target" min="50" max="250">
-                            <input type="number" id="bmiWeight" placeholder="Weight in Kilograms (kg)" required class="hover-target" min="20" max="350">
+                            <input type="number" id="bmiHeight" placeholder="Height in Centimeters (cm)" required
+                                class="hover-target" min="50" max="250">
+                            <input type="number" id="bmiWeight" placeholder="Weight in Kilograms (kg)" required
+                                class="hover-target" min="20" max="350">
                         </div>
-                        <button type="submit" class="btn btn-primary hover-target" style="width: 100%;">CALCULATE RESULT</button>
+                        <button type="submit" class="btn btn-primary hover-target" style="width: 100%;">CALCULATE
+                            RESULT</button>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <!-- Facilities -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">EVERYTHING YOU NEED TO <span class="highlight">TRAIN BETTER</span></h2>
+                </div>
+
+                <div style="display:flex; justify-content:center; gap:3rem; margin-bottom:4rem; flex-wrap:wrap;"
+                    class="reveal-up delay-1">
+                    <div style="text-align:center;">
+                        <h3 style="font-size:2.5rem; color:var(--accent-color); font-family:var(--font-heading);">3500+
+                        </h3>
+                        <p style="font-size:0.9rem; letter-spacing:1px; text-transform:uppercase;">SQ. FT.</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3 style="font-size:2.5rem; color:var(--accent-color); font-family:var(--font-heading);">50+
+                        </h3>
+                        <p style="font-size:0.9rem; letter-spacing:1px; text-transform:uppercase;">Equipment</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3 style="font-size:2.5rem; color:var(--accent-color); font-family:var(--font-heading);">24/7
+                        </h3>
+                        <p style="font-size:0.9rem; letter-spacing:1px; text-transform:uppercase;">Access</p>
+                    </div>
+                </div>
+
+                <div class="facilities-grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem;">
+                    <div class="facility-card reveal-up hover-target" style="padding: 1.5rem; text-align: center;">
+                        <h4>Free Weights</h4>
+                    </div>
+                    <div class="facility-card reveal-up delay-1 hover-target"
+                        style="padding: 1.5rem; text-align: center;">
+                        <h4>Squat Racks</h4>
+                    </div>
+                    <div class="facility-card reveal-up delay-2 hover-target"
+                        style="padding: 1.5rem; text-align: center;">
+                        <h4>Cable Machines</h4>
+                    </div>
+                    <div class="facility-card reveal-up hover-target" style="padding: 1.5rem; text-align: center;">
+                        <h4>Cardio Zone</h4>
+                    </div>
+                    <div class="facility-card reveal-up delay-1 hover-target"
+                        style="padding: 1.5rem; text-align: center;">
+                        <h4>Functional Area</h4>
+                    </div>
+                    <div class="facility-card reveal-up delay-2 hover-target"
+                        style="padding: 1.5rem; text-align: center;">
+                        <h4>Recovery Zone</h4>
+                    </div>
+                    <div class="facility-card reveal-up hover-target" style="padding: 1.5rem; text-align: center;">
+                        <h4>Locker Rooms</h4>
+                    </div>
+                    <div class="facility-card reveal-up delay-1 hover-target"
+                        style="padding: 1.5rem; text-align: center;">
+                        <h4>Premium Showers</h4>
+                    </div>
+                    <div class="facility-card reveal-up delay-2 hover-target"
+                        style="padding: 1.5rem; text-align: center;">
+                        <h4>Free Parking</h4>
+                    </div>
+                    <div class="facility-card reveal-up hover-target" style="padding: 1.5rem; text-align: center;">
+                        <h4>High-Speed Wi-Fi</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformation Gallery -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">REAL <span class="highlight">RESULTS</span></h2>
+                    <p class="section-desc" style="margin: 0 auto 2rem auto;">Real members, real work, real
+                        transformations.</p>
+                </div>
+
+
+                <style>
+                    .transform-grid {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 2rem;
+                    }
+
+                    .transform-card {
+                        flex: 1 1 300px;
+                        max-width: 400px;
+                        width: 100%;
+                    }
+                </style>
+                <div class="transform-grid">
+
+                    <div class="transform-card filter-item weight-loss reveal-up hover-target"
+                        data-modal='{"name": "Sarah", "program": "Weight Loss Program", "duration": "12 Weeks", "result": "-8.5 KG", "imgBefore": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80", "imgAfter": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80"}'>
+                        <div class="transform-img-holder"
+                            style="position: relative; overflow: hidden; border-radius: 8px;">
+                            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80"
+                                alt="Sarah - After" style="width: 100%; display: block;">
+                            <div class="transform-overlay"
+                                style="position: absolute; inset:0; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s; color:#fff;">
+                                <h4 style="font-size:2rem; font-family:var(--font-heading)">Sarah</h4>
+                                <p style="color:var(--accent-color); font-weight:bold;">-8.5 KG in 12 Weeks</p>
+                                <span
+                                    style="margin-top:1rem; font-size:0.9rem; text-decoration:underline; font-family:var(--font-heading); text-transform:uppercase;">Click
+                                    to view</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transform-card filter-item muscle-gain reveal-up hover-target"
+                        data-modal='{"name": "Marcus", "program": "Hypertrophy Block", "duration": "16 Weeks", "result": "+4.2 KG Muscle", "imgBefore": "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80", "imgAfter": "assets/images/marcus_after.png"}'>
+                        <div class="transform-img-holder"
+                            style="position: relative; overflow: hidden; border-radius: 8px;">
+                            <img src="assets/images/marcus_after.png" alt="Marcus - After"
+                                style="width: 100%; display: block;">
+                            <div class="transform-overlay"
+                                style="position: absolute; inset:0; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s; color:#fff;">
+                                <h4 style="font-size:2rem; font-family:var(--font-heading)">Marcus</h4>
+                                <p style="color:var(--accent-color); font-weight:bold;">+4.2 KG Muscle in 16 Weeks</p>
+                                <span
+                                    style="margin-top:1rem; font-size:0.9rem; text-decoration:underline; font-family:var(--font-heading); text-transform:uppercase;">Click
+                                    to view</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transform-card filter-item strength reveal-up hover-target"
+                        data-modal='{"name": "David", "program": "Powerlifting Fundamentals", "duration": "24 Weeks", "result": "+60kg to Deadlift", "imgBefore": "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80", "imgAfter": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80"}'>
+                        <div class="transform-img-holder"
+                            style="position: relative; overflow: hidden; border-radius: 8px;">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80"
+                                alt="David - After" style="width: 100%; display: block;">
+                            <div class="transform-overlay"
+                                style="position: absolute; inset:0; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s; color:#fff;">
+                                <h4 style="font-size:2rem; font-family:var(--font-heading)">David</h4>
+                                <p style="color:var(--accent-color); font-weight:bold;">+60kg Deadlift in 24 Weeks</p>
+                                <span
+                                    style="margin-top:1rem; font-size:0.9rem; text-decoration:underline; font-family:var(--font-heading); text-transform:uppercase;">Click
+                                    to view</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transform-card filter-item fitness reveal-up hover-target"
+                        data-modal='{"name": "FitNation Gym", "program": "High Intensity Fitness", "duration": "Ongoing", "result": "Peak Performance", "imgBefore": "assets/images/fitness.png", "imgAfter": "assets/images/fitness.png"}'>
+                        <div class="transform-img-holder"
+                            style="position: relative; overflow: hidden; border-radius: 8px;">
+                            <img src="assets/images/fitness.png" alt="Fitness Training"
+                                style="width: 100%; display: block;">
+                            <div class="transform-overlay"
+                                style="position: absolute; inset:0; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; justify-content:center; align-items:center; opacity:0; transition:opacity 0.3s; color:#fff;">
+                                <h4 style="font-size:2rem; font-family:var(--font-heading)">FitNation Gym</h4>
+                                <p style="color:var(--accent-color); font-weight:bold;">Peak Performance</p>
+                                <span
+                                    style="margin-top:1rem; font-size:0.9rem; text-decoration:underline; font-family:var(--font-heading); text-transform:uppercase;">Click
+                                    to view</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .filter-btn:hover,
+                .filter-btn.active {
+                    background: var(--accent-color) !important;
+                    border-color: var(--accent-color) !important;
+                    color: #000 !important;
+                }
+
+                .transform-card:hover .transform-overlay {
+                    opacity: 1 !important;
+                }
+            </style>
+        </section>
+
+        <!-- Goal Categories Section (RDX Inspired) -->
+        <section class="section section-bg-dark">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">SELECT YOUR <span class="highlight">GOAL</span></h2>
+                    <p class="section-desc" style="margin: 0 auto 3rem auto;">Because generic workouts give generic
+                        results. Pick your customized transformation path.</p>
+                </div>
+                <div class="category-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+
+                    <a href="contact.html" class="goal-card reveal-up hover-target"
+                        style="display:block; padding: 2.5rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="font-size: 3rem; margin-bottom: 1.5rem;">🌸</div>
+                        <h3
+                            style="color: var(--text-color); font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem; text-transform:uppercase; letter-spacing: 1px;">
+                            PCOS / Thyroid</h3>
+                        <strong
+                            style="color: var(--accent-color); display:block; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 500;">Stop
+                            managing. Start reversing.</strong>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Fix the root cause —
+                            insulin resistance, hormonal imbalance, irregular cycles — not just the symptoms.</p>
+                    </a>
+
+
+
+                    <a href="contact.html" class="goal-card reveal-up delay-2 hover-target"
+                        style="display:block; padding: 2.5rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="font-size: 3rem; margin-bottom: 1.5rem;">👶</div>
+                        <h3
+                            style="color: var(--text-color); font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem; text-transform:uppercase; letter-spacing: 1px;">
+                            Post-Partum</h3>
+                        <strong
+                            style="color: var(--accent-color); display:block; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 500;">Reclaim
+                            your pre-pregnancy body.</strong>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Safe, effective fat
+                            loss and strength training designed specifically for healthy post-partum recovery.</p>
+                    </a>
+
+                    <a href="contact.html" class="goal-card reveal-up delay-1 hover-target"
+                        style="display:block; padding: 2.5rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="font-size: 3rem; margin-bottom: 1.5rem;">🦵</div>
+                        <h3
+                            style="color: var(--text-color); font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem; text-transform:uppercase; letter-spacing: 1px;">
+                            Fat Loss (Knee Pain)</h3>
+                        <strong
+                            style="color: var(--accent-color); display:block; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 500;">Lose
+                            fat without hurting joints.</strong>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Specially designed
+                            workouts and nutrition that effectively burn fat while fully protecting your knees.</p>
+                    </a>
+
+                    <a href="contact.html" class="goal-card reveal-up delay-2 hover-target"
+                        style="display:block; padding: 2.5rem; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="font-size: 3rem; margin-bottom: 1.5rem;">💪</div>
+                        <h3
+                            style="color: var(--text-color); font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem; text-transform:uppercase; letter-spacing: 1px;">
+                            Muscle & Strength</h3>
+                        <strong
+                            style="color: var(--accent-color); display:block; margin-bottom: 1rem; font-size: 0.95rem; font-weight: 500;">Build
+                            the physique you want.</strong>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Progressive overload,
+                            smart nutrition, real results. No bro-science, no nonsense training.</p>
+                    </a>
+                </div>
+                <style>
+                    .goal-card:hover {
+                        border-color: var(--accent-color) !important;
+                        transform: translateY(-8px) !important;
+                        background: rgba(204, 255, 0, 0.05) !important;
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+                    }
+                </style>
             </div>
         </section>
 
@@ -100,49 +528,508 @@
             <div class="container">
                 <div class="section-header text-center reveal-up">
                     <h2 class="section-title">FEATURED <span class="highlight">PROGRAMS</span></h2>
-                    <p class="section-desc" style="margin: 0 auto 4rem auto;">Target your specific goals with our specialized programming.</p>
+                    <p class="section-desc" style="margin: 0 auto 4rem auto;">Target your specific goals with our
+                        specialized programming.</p>
                 </div>
-                
+
                 <div class="classes-list">
-                    <div class="class-item reveal-up hover-target" data-img="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80">
+                    <div class="class-item reveal-up hover-target"
+                        data-img="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80">
                         <div class="class-info">
-                            <h3>POWERLIFTING FUNDAMENTALS</h3>
-                            <p class="class-trainer">Strength Training & 1RM Progression</p>
+                            <h3>STRENGTH TRAINING</h3>
+                            <p class="class-trainer">Build strength, power and endurance.</p>
                         </div>
-                        <div class="class-arrow">↗</div>
-                    </div>
-                    
-                    <div class="class-item reveal-up hover-target" data-img="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80">
-                        <div class="class-info">
-                            <h3>TACTICAL HIIT</h3>
-                            <p class="class-trainer">Fat Loss & Extreme Conditioning</p>
-                        </div>
-                        <div class="class-arrow">↗</div>
+                        <div class="class-arrow"
+                            style="font-size:1rem; font-family:var(--font-heading); letter-spacing:1px; transform:none; display:flex; align-items:center; gap:10px;">
+                            Explore Program <span style="font-size:1.5rem">→</span></div>
                     </div>
 
-                    <div class="class-item reveal-up hover-target" data-img="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80">
+                    <div class="class-item reveal-up hover-target"
+                        data-img="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80">
                         <div class="class-info">
-                            <h3>AESTHETIC HYPERTROPHY</h3>
-                            <p class="class-trainer">Muscle Building & Body Composition</p>
+                            <h3>WEIGHT LOSS</h3>
+                            <p class="class-trainer">Structured workouts designed for sustainable fat loss.</p>
                         </div>
-                        <div class="class-arrow">↗</div>
+                        <div class="class-arrow"
+                            style="font-size:1rem; font-family:var(--font-heading); letter-spacing:1px; transform:none; display:flex; align-items:center; gap:10px;">
+                            Explore Program <span style="font-size:1.5rem">→</span></div>
+                    </div>
+
+                    <div class="class-item reveal-up hover-target"
+                        data-img="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80">
+                        <div class="class-info">
+                            <h3>MUSCLE BUILDING</h3>
+                            <p class="class-trainer">Progressive training and nutrition guidance.</p>
+                        </div>
+                        <div class="class-arrow"
+                            style="font-size:1rem; font-family:var(--font-heading); letter-spacing:1px; transform:none; display:flex; align-items:center; gap:10px;">
+                            Explore Program <span style="font-size:1.5rem">→</span></div>
+                    </div>
+
+                    <div class="class-item reveal-up hover-target"
+                        data-img="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80">
+                        <div class="class-info">
+                            <h3>HIIT & CONDITIONING</h3>
+                            <p class="class-trainer">High-intensity workouts for endurance and conditioning.</p>
+                        </div>
+                        <div class="class-arrow"
+                            style="font-size:1rem; font-family:var(--font-heading); letter-spacing:1px; transform:none; display:flex; align-items:center; gap:10px;">
+                            Explore Program <span style="font-size:1.5rem">→</span></div>
+                    </div>
+
+                    <div class="class-item reveal-up hover-target"
+                        data-img="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80">
+                        <div class="class-info">
+                            <h3>POWERLIFTING</h3>
+                            <p class="class-trainer">Squat, bench press and deadlift focused training.</p>
+                        </div>
+                        <div class="class-arrow"
+                            style="font-size:1rem; font-family:var(--font-heading); letter-spacing:1px; transform:none; display:flex; align-items:center; gap:10px;">
+                            Explore Program <span style="font-size:1.5rem">→</span></div>
+                    </div>
+
+                    <div class="class-item reveal-up hover-target"
+                        data-img="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80">
+                        <div class="class-info">
+                            <h3>PERSONAL TRAINING</h3>
+                            <p class="class-trainer">One-on-one coaching tailored to your goals.</p>
+                        </div>
+                        <div class="class-arrow"
+                            style="font-size:1rem; font-family:var(--font-heading); letter-spacing:1px; transform:none; display:flex; align-items:center; gap:10px;">
+                            Explore Program <span style="font-size:1.5rem">→</span></div>
                     </div>
                 </div>
                 <div class="class-image-preview"><img src="" alt="Class Preview"></div>
-                
+
                 <div class="text-center" style="margin-top: 4rem;">
                     <a href="programs.html" class="btn btn-outline hover-target reveal-up">Explore Full Programs</a>
                 </div>
             </div>
         </section>
 
-        <!-- Member Transformation Hook -->
-        <section class="section text-center" style="background: url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80') center/cover; position: relative;">
-            <div class="overlay" style="background: rgba(0,0,0,0.85);"></div>
-            <div class="container" style="position: relative; z-index: 2;">
-                <h2 class="huge-title reveal-text" style="font-size: clamp(3rem, 7vw, 10rem);">REAL GYM.<br/>REAL RESULTS.</h2>
-                <p class="section-desc reveal-up delay-1" style="margin: 0 auto 3rem auto;">Don't take our word for it. Look at our members before and after joining FitNation Gym.</p>
-                <a href="transformations.html" class="btn btn-primary btn-huge hover-target reveal-up delay-2">VIEW TRANSFORMATIONS</a>
+        <!-- Gym Gallery Section -->
+        <section class="section section-bg-dark">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">INSIDE <span class="highlight">FITNATION</span></h2>
+                </div>
+
+                <div class="gallery-filters text-center reveal-up delay-1" style="margin-bottom: 3rem;">
+                    <button class="gallery-filter-btn active hover-target" data-filter="all">ALL</button>
+                    <button class="gallery-filter-btn hover-target" data-filter="floor">GYM FLOOR</button>
+                    <button class="gallery-filter-btn hover-target" data-filter="equip">EQUIPMENT</button>
+                    <button class="gallery-filter-btn hover-target" data-filter="train">TRAINING</button>
+                    <button class="gallery-filter-btn hover-target" data-filter="classes">CLASSES</button>
+                    <button class="gallery-filter-btn hover-target" data-filter="community">COMMUNITY</button>
+                </div>
+
+                <!-- Simple CSS Masonry via Columns -->
+                <div class="gym-gallery-grid" style="column-count: 3; column-gap: 1.5rem;">
+                    <div class="gallery-item-new filter-item floor reveal-up hover-target"
+                        style="margin-bottom: 1.5rem; break-inside: avoid;  position:relative; overflow:hidden;"
+                        data-src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80">
+                        <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80" alt="Gym Floor"
+                            style="width: 100%; display: block; border-radius: 8px;">
+                    </div>
+                    <div class="gallery-item-new filter-item equip reveal-up hover-target"
+                        style="margin-bottom: 1.5rem; break-inside: avoid;  position:relative; overflow:hidden;"
+                        data-src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80" alt="Equipment"
+                            style="width: 100%; display: block; border-radius: 8px;">
+                    </div>
+                    <div class="gallery-item-new filter-item classes reveal-up hover-target"
+                        style="margin-bottom: 1.5rem; break-inside: avoid;  position:relative; overflow:hidden;"
+                        data-src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80" alt="Classes"
+                            style="width: 100%; display: block; border-radius: 8px;">
+                    </div>
+                    <div class="gallery-item-new filter-item train reveal-up hover-target"
+                        style="margin-bottom: 1.5rem; break-inside: avoid;  position:relative; overflow:hidden;"
+                        data-src="assets/images/gallery_training.png">
+                        <img src="assets/images/gallery_training.png" alt="Training"
+                            style="width: 100%; display: block; border-radius: 8px;">
+                    </div>
+                    <div class="gallery-item-new filter-item community reveal-up hover-target"
+                        style="margin-bottom: 1.5rem; break-inside: avoid;  position:relative; overflow:hidden;"
+                        data-src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80" alt="Community"
+                            style="width: 100%; display: block; border-radius: 8px;">
+                    </div>
+                    <div class="gallery-item-new filter-item equip reveal-up hover-target"
+                        style="margin-bottom: 1.5rem; break-inside: avoid;  position:relative; overflow:hidden;"
+                        data-src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80" alt="Equipment"
+                            style="width: 100%; display: block; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .gallery-filter-btn {
+                    background: transparent;
+                    border: 1px solid #333;
+                    color: #fff;
+                    padding: 0.5rem 1.5rem;
+                    margin: 0.2rem;
+                    font-family: var(--font-heading);
+                    transition: all 0.3s;
+                }
+
+                .gallery-filter-btn:hover,
+                .gallery-filter-btn.active {
+                    background: var(--accent-color);
+                    border-color: var(--accent-color);
+                    color: #000;
+                }
+
+                @media (max-width: 768px) {
+                    .gym-gallery-grid {
+                        column-count: 2;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .gym-gallery-grid {
+                        column-count: 1;
+                    }
+                }
+            </style>
+        </section>
+
+        <!-- Trainers -->
+        <section class="section section-bg-dark">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">MEET THE <span class="highlight">TRAINERS</span></h2>
+                    <p class="section-desc" style="margin: 0 auto 3rem auto;">Learn from industry leaders and certified
+                        professionals.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member reveal-up hover-target">
+                        <div class="team-img">
+                            <img src="assets/images/trainer_alex.png" alt="Trainer 1">
+                        </div>
+                        <div class="team-info">
+                            <h3>ALEX MORGAN</h3>
+                            <span class="team-role">Head Strength Coach</span>
+                            <div class="team-stats"
+                                style="margin: 1rem 0; font-size: 0.9rem; color: var(--text-muted);">
+                                <strong style="color:#fff;">8+ Years Experience</strong>
+                                <br><br>
+                                Strength • Powerlifting • Conditioning
+                            </div>
+
+                            <button class="btn btn-outline hover-target view-profile-btn"
+                                style="width: 100%; padding: 0.75rem;"
+                                data-trainer='{"name":"ALEX MORGAN", "role":"Head Strength Coach", "img":"assets/images/trainer_alex.png", "experience":"8+ Years", "certifications":"NSCA-CSCS, USA Weightlifting Level 2", "specialization":"Powerlifting, Hypertrophy, Athletic Performance", "achievements":"Coached 5 National Record Holders", "availability":"Mon-Fri 6AM - 2PM", "classes":"Powerlifting Fundamentals, Strength Class"}'>
+                                VIEW PROFILE
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="team-member reveal-up delay-1 hover-target">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80"
+                                alt="Trainer 2">
+                        </div>
+                        <div class="team-info">
+                            <h3>SARAH MILLER</h3>
+                            <span class="team-role">HIIT Specialist</span>
+                            <div class="team-stats"
+                                style="margin: 1rem 0; font-size: 0.9rem; color: var(--text-muted);">
+                                <strong style="color:#fff;">6+ Years Experience</strong>
+                                <br><br>
+                                Fat Loss • Endurance • Agility
+                            </div>
+
+                            <button class="btn btn-outline hover-target view-profile-btn"
+                                style="width: 100%; padding: 0.75rem;"
+                                data-trainer='{"name":"SARAH MILLER", "role":"HIIT Specialist", "img":"https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80", "experience":"6+ Years", "certifications":"NASM-CPT, CrossFit Level 1", "specialization":"Extreme fat loss, metabolic conditioning", "achievements":"Featured in Fitness Mag Top 50 Trainers", "availability":"Mon, Wed, Fri 4PM - 9PM", "classes":"Tactical HIIT, Weight Loss Bootcamp"}'>
+                                VIEW PROFILE
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="team-member reveal-up delay-2 hover-target">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80"
+                                alt="Trainer 3">
+                        </div>
+                        <div class="team-info">
+                            <h3>MIKE JOHNSON</h3>
+                            <span class="team-role">Mobility & Rehab</span>
+                            <div class="team-stats"
+                                style="margin: 1rem 0; font-size: 0.9rem; color: var(--text-muted);">
+                                <strong style="color:#fff;">10+ Years Experience</strong>
+                                <br><br>
+                                Injury Prevention • Recovery
+                            </div>
+
+                            <button class="btn btn-outline hover-target view-profile-btn"
+                                style="width: 100%; padding: 0.75rem;"
+                                data-trainer='{"name":"MIKE JOHNSON", "role":"Mobility & Rehab", "img":"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80", "experience":"10+ Years", "certifications":"Doctor of Physical Therapy, FMS Certified", "specialization":"Rehabilitation, Active Recovery, Mobility", "achievements":"Former physiotherapist for pro athletes", "availability":"Tue, Thu, Sat 8AM - 4PM", "classes":"Mobility Workshop, Recovery Session"}'>
+                                VIEW PROFILE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section section-bg-dark testimonials">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">WHAT OUR <span class="highlight">MEMBERS SAY</span></h2>
+                </div>
+                <div class="testimonial-carousel-container reveal-up delay-1"
+                    style="position:relative; max-width:800px; margin:0 auto; overflow:hidden; min-height: 250px; text-align: center;">
+                    <div class="testimonial-track" style="display:flex; transition: transform 0.5s ease; width: 100%;">
+
+                        <div class="testimonial-slide" style="flex: 0 0 100%; width: 100%;">
+                            <p class="testimonial-text"
+                                style="font-size:1.5rem; font-style:italic; margin-bottom:1rem;">"The trainers
+                                completely changed the way I approach training."</p>
+                            <div class="stars" style="color:var(--accent-color); margin-bottom:1rem;">★★★★★</div>
+                            <h4 style="font-family:var(--font-heading); letter-spacing:1px; margin-bottom:0.2rem;">James
+                                Wilson</h4>
+                            <p style="color:var(--text-muted); font-size:0.9rem;">Member since 2023 | <strong>Strength
+                                    Training</strong></p>
+                        </div>
+
+                        <div class="testimonial-slide" style="flex: 0 0 100%; width: 100%;">
+                            <p class="testimonial-text"
+                                style="font-size:1.5rem; font-style:italic; margin-bottom:1rem;">"Finally a gym that
+                                focuses on actual results and not just shiny amenities."</p>
+                            <div class="stars" style="color:var(--accent-color); margin-bottom:1rem;">★★★★★</div>
+                            <h4 style="font-family:var(--font-heading); letter-spacing:1px; margin-bottom:0.2rem;">
+                                Samantha Cole</h4>
+                            <p style="color:var(--text-muted); font-size:0.9rem;">Member since 2021 | <strong>Weight
+                                    Loss</strong></p>
+                        </div>
+
+                        <div class="testimonial-slide" style="flex: 0 0 100%; width: 100%;">
+                            <p class="testimonial-text"
+                                style="font-size:1.5rem; font-style:italic; margin-bottom:1rem;">"The community here
+                                pushes you beyond what you thought was possible."</p>
+                            <div class="stars" style="color:var(--accent-color); margin-bottom:1rem;">★★★★★</div>
+                            <h4 style="font-family:var(--font-heading); letter-spacing:1px; margin-bottom:0.2rem;">David
+                                Chen</h4>
+                            <p style="color:var(--text-muted); font-size:0.9rem;">Member since 2024 |
+                                <strong>Powerlifting</strong>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-btn prev-btn hover-target"
+                        style="position:absolute; top:50%; left:0; transform:translateY(-50%); background:none; border:none; color:var(--accent-color); font-size:2rem; ">&#10094;</button>
+                    <button class="carousel-btn next-btn hover-target"
+                        style="position:absolute; top:50%; right:0; transform:translateY(-50%); background:none; border:none; color:var(--accent-color); font-size:2rem; ">&#10095;</button>
+
+                    <div class="carousel-dots" style="text-align:center; margin-top:2rem;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memberships CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">MEMBERSHIP <span class="highlight">PLANS</span></h2>
+                    <p class="section-desc" style="margin: 0 auto 3rem auto;">Flexible options to fit your training
+                        lifestyle.</p>
+                </div>
+                <div class="pricing-cta text-center reveal-up delay-1 hover-target"
+                    style="background: #111; padding: 4rem 2rem; border-radius: 8px; border: 1px solid var(--border-color); transition: border-color 0.3s; max-width: 800px; margin: 0 auto;">
+                    <h3
+                        style="color: #fff; font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem; text-transform: uppercase;">
+                        Ready to join FitNation?</h3>
+                    <p
+                        style="color: var(--text-muted); font-size: 1.1rem; margin: 0 auto 2.5rem auto; line-height: 1.6;">
+                        We offer fully loaded Monthly, Quarterly, Half-Yearly, and VIP Annual packages. No hidden fees,
+                        just real results.
+                    </p>
+                    <a href="membership.html" class="btn btn-primary btn-large"
+                        style="padding: 1rem 3rem; font-size: 1.1rem;">EXPLORE FULL PRICING DETAILS</a>
+                </div>
+                <style>
+                    .pricing-cta:hover {
+                        border-color: var(--accent-color) !important;
+                    }
+                </style>
+            </div>
+        </section>
+
+
+
+        <!-- FAQ Accordion -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">FREQUENTLY ASKED <span class="highlight">QUESTIONS</span></h2>
+                </div>
+
+                <div class="faq-container reveal-up delay-1" style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                        <button class="faq-question hover-target"
+                            style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; color: #fff; font-size: 1.2rem; font-family: var(--font-heading); letter-spacing: 1px;  text-align: left; padding: 0;">
+                            What should I bring for my first workout?
+                            <span class="faq-icon"
+                                style="color: var(--accent-color); font-size: 2rem; font-weight: normal; transition: transform 0.3s; line-height: 1;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-top: 1rem; color: #aaa;">Just bring comfortable workout clothes, a water
+                                bottle, and a great attitude. We provide fresh towels and all the equipment you'll ever
+                                need.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                        <button class="faq-question hover-target"
+                            style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; color: #fff; font-size: 1.2rem; font-family: var(--font-heading); letter-spacing: 1px;  text-align: left; padding: 0;">
+                            Do you offer personal training?
+                            <span class="faq-icon"
+                                style="color: var(--accent-color); font-size: 2rem; font-weight: normal; transition: transform 0.3s; line-height: 1;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-top: 1rem; color: #aaa;">Yes, we have an elite team of certified personal
+                                trainers available for 1-on-1 coaching, small group sessions, and specialized athletic
+                                programming.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                        <button class="faq-question hover-target"
+                            style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; color: #fff; font-size: 1.2rem; font-family: var(--font-heading); letter-spacing: 1px;  text-align: left; padding: 0;">
+                            Can beginners join FitNation?
+                            <span class="faq-icon"
+                                style="color: var(--accent-color); font-size: 2rem; font-weight: normal; transition: transform 0.3s; line-height: 1;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-top: 1rem; color: #aaa;">Absolutely. While we cater to serious athletes,
+                                our coaches scale every movement to safely guide beginners from day one.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                        <button class="faq-question hover-target"
+                            style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; color: #fff; font-size: 1.2rem; font-family: var(--font-heading); letter-spacing: 1px;  text-align: left; padding: 0;">
+                            Do you offer free trials?
+                            <span class="faq-icon"
+                                style="color: var(--accent-color); font-size: 2rem; font-weight: normal; transition: transform 0.3s; line-height: 1;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-top: 1rem; color: #aaa;">Yes, we offer a complimentary 3-day pass for
+                                local residents to experience the facility and our coaching firsthand.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                        <button class="faq-question hover-target"
+                            style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; color: #fff; font-size: 1.2rem; font-family: var(--font-heading); letter-spacing: 1px;  text-align: left; padding: 0;">
+                            What are your membership plans?
+                            <span class="faq-icon"
+                                style="color: var(--accent-color); font-size: 2rem; font-weight: normal; transition: transform 0.3s; line-height: 1;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-top: 1rem; color: #aaa;">We offer flexible Month-to-Month, 6-Month, and
+                                Annual plans. See our Memberships page for full pricing details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                        <button class="faq-question hover-target"
+                            style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; color: #fff; font-size: 1.2rem; font-family: var(--font-heading); letter-spacing: 1px;  text-align: left; padding: 0;">
+                            Is the gym open 24/7?
+                            <span class="faq-icon"
+                                style="color: var(--accent-color); font-size: 2rem; font-weight: normal; transition: transform 0.3s; line-height: 1;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-top: 1rem; color: #aaa;">Yes! We provide 24/7 secure keycard access to all
+                                active members.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-bottom: 1px solid var(--border-color); padding: 1.5rem 0;">
+                        <button class="faq-question hover-target"
+                            style="width: 100%; display: flex; justify-content: space-between; align-items: center; background: none; border: none; color: #fff; font-size: 1.2rem; font-family: var(--font-heading); letter-spacing: 1px;  text-align: left; padding: 0;">
+                            Can I freeze my membership?
+                            <span class="faq-icon"
+                                style="color: var(--accent-color); font-size: 2rem; font-weight: normal; transition: transform 0.3s; line-height: 1;">+</span>
+                        </button>
+                        <div class="faq-answer"
+                            style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="padding-top: 1rem; color: #aaa;">Members can freeze their account for up to 3
+                                months per year for travel or medical reasons at no extra charge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-bg-dark" id="contact">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">GET IN <span class="highlight">TOUCH</span></h2>
+                    <p class="section-desc" style="margin: 0 auto 3rem auto;">Ready to start your journey? Contact us
+                        today.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info reveal-up">
+                        <div class="contact-box hover-target">
+                            <h4>LOCATION</h4>
+                            <p>Ahmedabad, Gujarat, India</p>
+                        </div>
+                        <div class="contact-box hover-target">
+                            <h4>CONTACT DETAILS</h4>
+                            <p>Phone: +44 7911 123456<br>Email: info@fitnationgym.com</p>
+                        </div>
+                        <div class="contact-box hover-target">
+                            <h4>FOLLOW US</h4>
+                            <p>Connect on <a href="#" style="color:var(--accent-color);">Instagram</a>, <a href="#"
+                                    style="color:var(--accent-color);">Facebook</a>, and <a href="#"
+                                    style="color:var(--accent-color);">YouTube</a>.</p>
+                        </div>
+                    </div>
+                    <div class="contact-form reveal-up delay-1"
+                        style="background: var(--bg-secondary); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <h4 id="contactFormTitle"
+                            style="margin-bottom: 1.5rem; font-family: var(--font-heading); font-size: 1.6rem; color: var(--accent-color); letter-spacing: 1px;">
+                            SEND A MESSAGE</h4>
+                        <form id="contactForm" style="display:flex; flex-direction:column; gap:1.2rem;"
+                            onsubmit="event.preventDefault(); document.getElementById('contactForm').style.display='none'; document.getElementById('contactFormTitle').style.display='none'; document.getElementById('contactSuccess').style.display='block';">
+                            <input type="text" placeholder="Your Name"
+                                style="width:100%; padding:1.2rem; background:transparent; border:1px solid var(--border-color); color:#fff; border-radius: 4px; font-family: inherit;"
+                                class="hover-target" required>
+                            <input type="email" placeholder="Your Email"
+                                style="width:100%; padding:1.2rem; background:transparent; border:1px solid var(--border-color); color:#fff; border-radius: 4px; font-family: inherit;"
+                                class="hover-target" required>
+                            <textarea placeholder="Message" rows="5"
+                                style="width:100%; padding:1.2rem; background:transparent; border:1px solid var(--border-color); color:#fff; resize:vertical; border-radius: 4px; font-family: inherit;"
+                                class="hover-target" required></textarea>
+                            <button type="submit" class="btn btn-primary hover-target"
+                                style="width:100%; padding: 1.2rem; margin-top: 0.5rem; font-weight: bold; letter-spacing: 2px;">SUBMIT</button>
+                        </form>
+                        <div id="contactSuccess" style="display: none; text-align: center; padding: 2.5rem 1rem;">
+                            <div style="font-size: 3.5rem; color: var(--accent-color); margin-bottom: 1rem;">&#10003;
+                            </div>
+                            <h4
+                                style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 0.5rem; color: #fff;">
+                                THANK YOU!</h4>
+                            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6;">Your message has
+                                been sent successfully.<br>We will be in touch shortly.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -150,9 +1037,215 @@
 
     <gym-footer></gym-footer>
 
+    <!-- Trainer Details Modal -->
+    <div class="modal-overlay" id="trainerModal">
+        <div class="modal-card">
+            <button class="modal-close hover-target">&times;</button>
+            <div class="modal-body" style="display: flex; gap: 2.5rem; flex-wrap: wrap;">
+                <div class="modal-image" style="flex: 1; min-width: 250px;">
+                    <img id="modalImg" src="" alt="Trainer Photo"
+                        style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color); display: block;">
+                </div>
+                <div class="modal-info" style="flex: 2; min-width: 300px;">
+                    <h2 id="modalName"
+                        style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 0.5rem; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1px;">
+                        Name</h2>
+                    <h4 id="modalRole"
+                        style="color: #fff; margin-bottom: 2rem; font-size: 1.1rem; font-weight: 500; font-family: var(--font-heading); letter-spacing: 1px; text-transform: uppercase;">
+                        Role</h4>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; font-size: 0.95rem; color: #ccc;">
+                        <div><strong style="color: #fff; display:block; margin-bottom: 0.3rem;">Experience:</strong>
+                            <span id="modalExp"></span>
+                        </div>
+                        <div><strong style="color: #fff; display:block; margin-bottom: 0.3rem;">Certifications:</strong>
+                            <span id="modalCerts"></span>
+                        </div>
+                        <div><strong style="color: #fff; display:block; margin-bottom: 0.3rem;">Specialization:</strong>
+                            <span id="modalSpec" style="color:var(--accent-color)"></span>
+                        </div>
+                        <div><strong style="color: #fff; display:block; margin-bottom: 0.3rem;">Achievements:</strong>
+                            <span id="modalAch"></span>
+                        </div>
+                        <div><strong style="color: #fff; display:block; margin-bottom: 0.3rem;">Weekly
+                                Availability:</strong> <span id="modalAvail"></span></div>
+                        <div><strong style="color: #fff; display:block; margin-bottom: 0.3rem;">Classes:</strong> <span
+                                id="modalClasses"></span></div>
+                    </div>
+
+                    <a href="contact.html" class="btn btn-primary hover-target"
+                        style="display: inline-block; padding: 1rem 2rem;">Book Personal Training</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transformation Details Modal -->
+    <div class="modal-overlay" id="transModal">
+        <div class="modal-card" style="max-width: 900px;">
+            <button class="trans-close modal-close hover-target">&times;</button>
+            <div class="modal-body" style="display: flex; gap: 2rem; flex-wrap: wrap; align-items:center;">
+                <div style="flex: 1; min-width: 200px; text-align: center;">
+                    <h4 style="margin-bottom: 1rem; color: #aaa; font-family:var(--font-heading); letter-spacing:2px;">
+                        BEFORE</h4>
+                    <img id="transImgBefore" src="" alt="Before" style="width: 100%; border-radius: 8px;">
+                </div>
+                <div style="flex: 1; min-width: 200px; text-align: center;">
+                    <h4
+                        style="margin-bottom: 1rem; color: var(--accent-color); font-family:var(--font-heading); letter-spacing:2px;">
+                        AFTER</h4>
+                    <img id="transImgAfter" src="" alt="After" style="width: 100%; border-radius: 8px;">
+                </div>
+                <div style="flex: 1; min-width: 250px; text-align:left;">
+                    <h2 id="transName"
+                        style="font-size: 3rem; color: #fff; font-family: var(--font-heading); text-transform: uppercase;">
+                        Name</h2>
+                    <p id="transProgram"
+                        style="color: #aaa; margin-bottom: 1.5rem; font-size: 1.1rem; text-transform: uppercase;">
+                        Program</p>
+                    <div style="font-size: 2.5rem; color: var(--accent-color); font-family: var(--font-heading); margin-bottom: 0.5rem;"
+                        id="transResult">-8.5 KG</div>
+                    <div style="font-size: 1.1rem; color: #fff; margin-bottom: 2.5rem;" id="transDuration">12 Weeks
+                    </div>
+                    <a href="contact.html" class="btn btn-primary hover-target"
+                        style="display:inline-block; padding:1rem 2rem;">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div class="modal-overlay" id="lightboxModal"
+        style="display:none; align-items:center; justify-content:center; z-index:10001; background:rgba(0,0,0,0.95); opacity: 0; transition: opacity 0.3s ease;">
+        <button class="lightbox-close hover-target"
+            style="position:absolute; top:20px; right:30px; font-size:4rem; color:#fff; background:none; border:none;  line-height:1; z-index:10002;">&times;</button>
+        <img id="lightboxImg" src="" alt="Fullscreen Image"
+            style="max-width:90vw; max-height:90vh; border-radius:4px; box-shadow:0 10px 40px rgba(0,0,0,0.5); object-fit: contain;">
+    </div>
+
+    <!-- Book a Call Modal (Multi-Step Flow) -->
+    <div class="modal-overlay" id="bookCallModal"
+        style="display:none; align-items:center; justify-content:center; z-index:10001; background:rgba(0,0,0,0.95); opacity: 0; transition: opacity 0.3s ease;">
+        <div class="modal-card"
+            style="max-width: 550px; width: 90%; background: #111; border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; position: relative; max-height: 90vh; display: flex; flex-direction: column; overflow: hidden;">
+            <button class="call-modal-close hover-target"
+                style="position:absolute; top:15px; right:20px; font-size:2.5rem; color:#fff; background:none; border:none;  line-height:1;">&times;</button>
+
+            <!-- Step Indicator -->
+            <div class="step-indicator"
+                style="font-family: var(--font-heading); color: var(--accent-color); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 1rem; text-align: center; flex-shrink: 0;">
+                <span id="step1Indicator" style="color:var(--accent-color); transition: color 0.3s;">01 Goal</span>
+                &nbsp;&rarr;&nbsp;
+                <span id="step2Indicator" style="color:#555; transition: color 0.3s;">02 Details</span>
+                &nbsp;&rarr;&nbsp;
+                <span id="step3Indicator" style="color:#555; transition: color 0.3s;">03 Confirmation</span>
+            </div>
+
+            <!-- Scrollable Content Area -->
+            <div class="custom-scroll-area"
+                style="overflow-y: auto; overflow-x: hidden; padding-right: 15px; margin-right: -15px; flex-grow: 1;">
+
+                <!-- Step 1: Select Goal -->
+                <div id="callStep1">
+                    <h3
+                        style="color: #fff; font-size: 1.8rem; margin-bottom: 0.5rem; font-family: var(--font-heading); text-transform: uppercase; text-align: center;">
+                        Choose Your Goal</h3>
+                    <p style="color: #aaa; margin-bottom: 2rem; font-size: 0.95rem; text-align: center;"><strong>WHAT
+                            ARE YOU LOOKING TO ACHIEVE?</strong><br>Select the option that best matches your current
+                        fitness goal.</p>
+
+                    <div class="goal-options"
+                        style="display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem;">
+                        <button class="goal-btn hover-target">Weight Loss</button>
+                        <button class="goal-btn hover-target">Muscle Building</button>
+                        <button class="goal-btn hover-target">Strength & Fitness</button>
+                        <button class="goal-btn hover-target">Body Transformation</button>
+                        <button class="goal-btn hover-target">Fat Loss & Toning</button>
+                        <button class="goal-btn hover-target">General Fitness</button>
+                    </div>
+
+                    <button type="button" id="btnNextToStep2" class="btn btn-primary hover-target"
+                        style="width: 100%; display: none; padding: 1rem; ">Apply Now</button>
+                </div>
+
+                <!-- Step 2: Form Details -->
+                <div id="callStep2" style="display: none;">
+                    <h3
+                        style="color: #fff; font-size: 1.8rem; margin-bottom: 0.5rem; font-family: var(--font-heading); text-transform: uppercase; text-align: center;">
+                        START YOUR 90-DAY TRANSFORMATION</h3>
+                    <p style="color: #aaa; margin-bottom: 2rem; font-size: 0.95rem; text-align: center;">Tell us a
+                        little about yourself so we can understand your goals and create the right plan.</p>
+
+                    <form id="bookCallForm" onsubmit="return false;">
+                        <input type="hidden" id="selectedGoalInput" name="goal">
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                            <input type="text" id="fwFirstName" class="hover-target" placeholder="First Name" required
+                                title="Please enter your first name"
+                                style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
+                            <input type="text" id="fwLastName" class="hover-target" placeholder="Last Name" required
+                                title="Please enter your last name"
+                                style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <input type="email" id="fwEmail" class="hover-target" placeholder="Email Address" required
+                                title="Please enter a valid email address"
+                                style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <input type="tel" id="fwPhone" class="hover-target" placeholder="Phone Number" required
+                                title="Please enter a valid phone number"
+                                style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+                            <input type="number" id="fwAge" class="hover-target" placeholder="Age" required min="16"
+                                max="100"
+                                style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
+                            <input type="number" id="fwWeight" class="hover-target" placeholder="Current Weight"
+                                required
+                                style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
+                        </div>
+
+                        <div
+                            style="margin-bottom: 2rem; background: #1a1a1a; padding: 1rem; border-radius: 4px; border: 1px solid var(--accent-color);">
+                            <span style="color: #888; font-size:0.9rem; display:block; margin-bottom:0.3rem;">Selected
+                                Goal</span>
+                            <strong id="displaySelectedGoal"
+                                style="color: rgba(220, 255, 7, 1); font-family: var(--font-heading); text-transform: uppercase;">None</strong>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary hover-target"
+                            style="width: 100%; padding: 1rem; ">Submit Application</button>
+                        <div style="text-align: center; margin-top: 1rem;">
+                            <button type="button" id="btnBackToStep1" class="hover-target"
+                                style="background: transparent; color: #aaa; text-decoration: underline; border: none;  font-size: 0.9rem;">Back
+                                to Goals</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Step 3: Success Message -->
+                <div id="callStep3" style="display: none; text-align: center; padding: 2rem 0;">
+                    <div style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1rem; line-height: 1;">
+                        &#10003;</div>
+                    <h3
+                        style="color: #fff; font-size: 2rem; margin-bottom: 1rem; font-family: var(--font-heading); text-transform: uppercase;">
+                        THANK YOU FOR APPLYING</h3>
+                    <p style="color: #aaa; margin-bottom: 2rem; line-height: 1.6;">We’ve received your application
+                        successfully. Our team will review your details and get in touch with you within 24 hours to
+                        discuss your goals and next steps.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="assets/js/components.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
