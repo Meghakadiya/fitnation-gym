@@ -93,12 +93,112 @@
 
     <!-- Testimonial Section inside Transformations -->
     <section class="testimonials">
-        <div class="container">
-            <div class="stars reveal-up">★★★★★</div>
-            <p class="testimonial-text reveal-up delay-1">"I joined FitNation Gym thinking it was just another gym. I quickly learned the coaches are deeply invested in your progress. I lost 30lbs and found a community."</p>
-            <div class="testimonial-author reveal-up delay-2">
-                — Elena R. (Member since 2024)
+        <div class="container reveal-up" style="position: relative; max-width: 900px;">
+            <div class="stars" style="margin-bottom: 2rem;">★★★★★</div>
+            
+            <div id="testimonialSlider" style="min-height: 180px; position: relative;">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide active-slide">
+                    <p class="testimonial-text">"I joined FitNation Gym thinking it was just another gym. I quickly learned the coaches are deeply invested in your progress. I lost 30lbs and found a community."</p>
+                    <div class="testimonial-author">— Elena R. (Member since 2024)</div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"The strength and conditioning programming here is unmatched. I dropped 15% body fat in just 6 months and feel stronger than I ever did in my 20s."</p>
+                    <div class="testimonial-author">— Marcus T. (Member since 2022)</div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"As a complete beginner, I was intimidated by free weights. The trainers at FitNation broke it down perfectly. I'm now deadlifting twice my body weight!"</p>
+                    <div class="testimonial-author">— Sarah J. (Member since 2023)</div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"I've trained at five different gyms across the city, but none compare to this facility. The equipment is elite and the atmosphere forces you to level up."</p>
+                    <div class="testimonial-author">— David L. (Competitive Powerlifter)</div>
+                </div>
+                <!-- Testimonial 5 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"What stands out the most is the 24/7 access and the sheer cleanliness of the gym. Plus, the community is incredibly supportive. Best gym in town."</p>
+                    <div class="testimonial-author">— Jessica W. (Member since 2021)</div>
+                </div>
             </div>
+
+            <!-- Dots Navigation -->
+            <div class="testimonial-dots hover-target-group">
+                <span class="dot active" onclick="setTestimonial(0)"></span>
+                <span class="dot" onclick="setTestimonial(1)"></span>
+                <span class="dot" onclick="setTestimonial(2)"></span>
+                <span class="dot" onclick="setTestimonial(3)"></span>
+                <span class="dot" onclick="setTestimonial(4)"></span>
+            </div>
+
+            <style>
+                .testimonial-slide {
+                    display: none;
+                    animation: slideFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+                }
+                .testimonial-slide.active-slide {
+                    display: block;
+                }
+                .testimonial-dots {
+                    display: flex;
+                    justify-content: center;
+                    gap: 12px;
+                    margin-top: 3rem;
+                }
+                .dot {
+                    width: 12px;
+                    height: 12px;
+                    background: #333;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                .dot:hover {
+                    background: #555;
+                }
+                .dot.active {
+                    background: var(--accent-color);
+                    box-shadow: 0 0 10px rgba(204, 255, 0, 0.5);
+                    transform: scale(1.2);
+                }
+                @keyframes slideFadeIn {
+                    from { opacity: 0; transform: translateY(15px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+            </style>
+
+            <script>
+                let currentTestimonial = 0;
+                const slides = document.querySelectorAll('.testimonial-slide');
+                const dots = document.querySelectorAll('.dot');
+                let testimonialInterval;
+
+                function setTestimonial(index) {
+                    slides.forEach(s => s.classList.remove('active-slide'));
+                    dots.forEach(d => d.classList.remove('active'));
+                    
+                    currentTestimonial = index;
+                    
+                    slides[currentTestimonial].classList.add('active-slide');
+                    dots[currentTestimonial].classList.add('active');
+                    
+                    resetInterval();
+                }
+
+                function nextTestimonial() {
+                    let next = (currentTestimonial + 1) % slides.length;
+                    setTestimonial(next);
+                }
+
+                function resetInterval() {
+                    clearInterval(testimonialInterval);
+                    testimonialInterval = setInterval(nextTestimonial, 5000);
+                }
+
+                resetInterval();
+            </script>
         </div>
     </section>
 
