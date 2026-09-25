@@ -22,40 +22,12 @@
                 style="font-size:1rem; letter-spacing:6px; display:block; text-align:center;">GYM</span></div>
     </div>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo"><span class="logo-main">FITNATION</span><span
-                    class="logo-gym">GYM</span></a>
-            <div class="burger-menu hover-target">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <nav class="nav-links">
-                <a href="index.html" class="nav-link active hover-target">HOME</a>
-                <a href="about.html" class="nav-link hover-target">ABOUT</a>
-                <a href="programs.html" class="nav-link hover-target">PROGRAMS</a>
-                <a href="trainers.html" class="nav-link hover-target">TRAINERS</a>
-                <a href="membership.html" class="nav-link hover-target">MEMBERSHIPS</a>
-                <a href="classes.html" class="nav-link hover-target">CLASSES</a>
-                <a href="transformations.html" class="nav-link hover-target">TRANSFORMATIONS</a>
-                <a href="contact.html" class="nav-link hover-target">CONTACT</a>
-                <a href="#" class="btn btn-primary hover-target mobile-auth book-call-btn" style="display:none;">BOOK A
-                    CALL</a>
-            </nav>
-            <div class="desktop-auth nav-actions">
-                <a href="#" class="btn btn-primary hover-target book-call-btn">BOOK A CALL</a>
-            </div>
-        </div>
-    </header>
+    <gym-header></gym-header>
 
     <main>
         <!-- Mobile Sticky CTA -->
         <div class="mobile-bottom-cta">
-            <a href="tel:+16145554766" class="cta-link">CALL</a>
-            <a href="https://wa.me/16145554766" class="cta-link">WHATSAPP</a>
-            <a href="#" class="cta-link highlight-cta book-call-btn">BOOK A CALL</a>
+            <a href="#" class="cta-link highlight-cta book-call-btn" style="width: 100%;">BOOK A CALL</a>
         </div>
 
         <!-- Hero Slider (Professional Hero & CTA) -->
@@ -852,8 +824,8 @@
                         We offer fully loaded Monthly, Quarterly, Half-Yearly, and VIP Annual packages. No hidden fees,
                         just real results.
                     </p>
-                    <a href="membership.html" class="btn btn-primary btn-large"
-                        style="padding: 1rem 3rem; font-size: 1.1rem;">EXPLORE FULL PRICING DETAILS</a>
+                    <a href="membership.html" class="btn btn-primary btn-large pricing-btn-responsive">EXPLORE FULL
+                        PRICING DETAILS</a>
                 </div>
                 <style>
                     .pricing-cta:hover {

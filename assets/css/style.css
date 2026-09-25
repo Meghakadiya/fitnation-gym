@@ -22,6 +22,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -29,6 +31,8 @@ body {
     color: var(--text-color);
     font-family: var(--font-body);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
     line-height: 1.6;
 }
 
@@ -1517,4 +1521,19 @@ select:focus {
 .custom-scroll-area {
     scrollbar-width: thin;
     scrollbar-color: var(--accent-color) #111;
+}
+
+/* Responsive Pricing Button */
+.pricing-btn-responsive {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .pricing-btn-responsive {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 1rem 1.5rem;
+        white-space: normal;
+    }
 }
