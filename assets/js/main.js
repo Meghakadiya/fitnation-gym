@@ -1,7 +1,18 @@
-
 // -------------------------------------------------------- //
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Global Scroll Lock Utilities to prevent layout shift
+    const lockScroll = () => {
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.body.style.paddingRight = scrollbarWidth + 'px';
+        document.body.style.overflow = 'hidden';
+    };
+
+    const unlockScroll = () => {
+        document.body.style.paddingRight = '';
+        document.body.style.overflow = '';
+    };
     
     const preloader = document.querySelector('.preloader');
     setTimeout(() => {
@@ -237,16 +248,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.getElementById('modalClasses').innerText = data.classes;
                     
                     trainerModal.classList.add('active');
+                    lockScroll();
                 });
             });
 
             trainerModalClose.addEventListener('click', () => {
                 trainerModal.classList.remove('active');
+                unlockScroll();
             });
 
             trainerModal.addEventListener('click', (e) => {
                 if(e.target === trainerModal) {
                     trainerModal.classList.remove('active');
+                    unlockScroll();
                 }
             });
         }
@@ -322,16 +336,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     document.getElementById('transDuration').innerText = data.duration;
                     
                     transModal.classList.add('active');
+                    lockScroll();
                 });
             });
 
             transModalClose.addEventListener('click', () => {
                 transModal.classList.remove('active');
+                unlockScroll();
             });
 
             transModal.addEventListener('click', (e) => {
                 if(e.target === transModal) {
                     transModal.classList.remove('active');
+                    unlockScroll();
                 }
             });
         }
@@ -369,18 +386,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.addEventListener('click', () => {
                     lightboxImg.src = item.getAttribute('data-src');
                     lightboxModal.style.display = 'flex';
+                    lockScroll();
                     setTimeout(() => { lightboxModal.style.opacity = '1'; }, 10);
                 });
             });
             
             lightboxClose.addEventListener('click', () => {
                 lightboxModal.style.opacity = '0';
+                unlockScroll();
                 setTimeout(() => { lightboxModal.style.display = 'none'; }, 300);
             });
             
             lightboxModal.addEventListener('click', (e) => {
                 if (e.target === lightboxModal) {
                     lightboxModal.style.opacity = '0';
+                    unlockScroll();
                     setTimeout(() => { lightboxModal.style.display = 'none'; }, 300);
                 }
             });
@@ -452,6 +472,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 currentSelectedGoal = "";
                 
                 callModal.style.display = 'flex';
+                lockScroll();
                 setTimeout(() => { callModal.style.opacity = '1'; }, 10);
             };
 
@@ -459,6 +480,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             const closeCallModal = () => {
                 callModal.style.opacity = '0';
+                unlockScroll();
                 setTimeout(() => { callModal.style.display = 'none'; }, 300);
             };
             
