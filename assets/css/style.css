@@ -1476,6 +1476,24 @@ select:focus {
 }
 
 @media (max-width: 768px) {
+    .btn {
+        white-space: normal;
+        padding: 0.8rem 1.5rem;
+        height: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .btn-large {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-huge {
+        padding: 1.2rem 2rem;
+        font-size: 1.2rem;
+    }
+
     .container {
         padding: 0 1.25rem;
     }

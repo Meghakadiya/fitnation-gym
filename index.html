@@ -1096,8 +1096,7 @@
         style="display:none; align-items:center; justify-content:center; z-index:10001; background:rgba(0,0,0,0.95); opacity: 0; transition: opacity 0.3s ease;">
         <div class="modal-card"
             style="max-width: 550px; width: 90%; background: #111; border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; position: relative; max-height: 90vh; display: flex; flex-direction: column; overflow: hidden;">
-            <button class="call-modal-close hover-target"
-                style="position:absolute; top:15px; right:20px; font-size:2.5rem; color:#fff; background:none; border:none;  line-height:1;">&times;</button>
+            <button class="call-modal-close modal-close hover-target">&times;</button>
 
             <!-- Step Indicator -->
             <div class="step-indicator"
@@ -1147,7 +1146,7 @@
                     <form id="bookCallForm" onsubmit="return false;">
                         <input type="hidden" id="selectedGoalInput" name="goal">
 
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                        <div class="form-grid" style="margin-bottom: 1rem;">
                             <input type="text" id="fwFirstName" class="hover-target" placeholder="First Name" required
                                 title="Please enter your first name"
                                 style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
@@ -1165,7 +1164,7 @@
                                 title="Please enter a valid phone number"
                                 style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+                        <div class="form-grid" style="margin-bottom: 2rem;">
                             <input type="number" id="fwAge" class="hover-target" placeholder="Age" required min="16"
                                 max="100"
                                 style="width: 100%; padding: 1rem; background: #222; border: 1px solid #333; color: #fff; border-radius: 4px; font-family: var(--font-body); ">
