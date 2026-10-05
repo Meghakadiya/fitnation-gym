@@ -46,9 +46,35 @@ class GymHeader extends HTMLElement {
         const burgerMenu = this.querySelector('#burgerMenu');
         const navLinks = this.querySelector('.nav-links');
         
-        burgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
+        const toggleMenu = () => {
+            const isActive = navLinks.classList.toggle('nav-active');
             burgerMenu.classList.toggle('toggle');
+            if (isActive) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        };
+
+        const closeMenu = () => {
+            if (navLinks.classList.contains('nav-active')) {
+                navLinks.classList.remove('nav-active');
+                burgerMenu.classList.remove('toggle');
+                document.body.style.overflow = '';
+            }
+        };
+
+        burgerMenu.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking any link
+        const allNavLinks = this.querySelectorAll('.nav-link, .mobile-auth a');
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Close menu when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
         });
     }
 }
@@ -109,6 +135,11 @@ class GymFooter extends HTMLElement {
                 </div>
             </div>
         </footer>
+        <div class="mobile-bottom-cta">
+            <a href="tel:+447911123456" class="cta-link hover-target">CALL US</a>
+            <a href="contact.html" class="cta-link hover-target">ENQUIRE</a>
+            <a href="membership.html" class="cta-link highlight-cta hover-target">JOIN NOW</a>
+        </div>
         `;
     }
 }
