@@ -33,11 +33,11 @@ class GymHeader extends HTMLElement {
             </div>
         </header>
         `;
-        
+
         let path = window.location.pathname;
         let page = path.split("/").pop();
         if (!page) page = "index.html";
-        
+
         const activeLink = this.querySelector(`.nav-link[data-page="${page}"]`);
         if (activeLink) {
             activeLink.classList.add("active");
@@ -45,7 +45,7 @@ class GymHeader extends HTMLElement {
 
         const burgerMenu = this.querySelector('#burgerMenu');
         const navLinks = this.querySelector('.nav-links');
-        
+
         const toggleMenu = () => {
             const isActive = navLinks.classList.toggle('nav-active');
             burgerMenu.classList.toggle('toggle');
